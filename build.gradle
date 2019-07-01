@@ -7,7 +7,7 @@ repositories {
     maven { url 'https://maven.issizler.club/repository/maven-snapshots/' } // Use maven-releases when we release
 }
 
-group 'club.issizler' // Change this
+group 'club.issizler'
 version '0.1.0'
 
 sourceCompatibility = 1.8
@@ -24,7 +24,7 @@ processResources {
     inputs.property "version", project.version
 
     from(sourceSets.main.resources.srcDirs) {
-        include "okyanus.json"
+        include "fabric.mod.json"
         expand "version": project.version
     }
 }
