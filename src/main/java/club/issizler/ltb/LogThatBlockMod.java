@@ -8,6 +8,7 @@ public class LogThatBlockMod extends Mod {
     public void init() {
         registerEvent(new BreakListener());
         registerEvent(new PlaceListener());
+        registerEvent(new InteractListener());
     }
 
 }
